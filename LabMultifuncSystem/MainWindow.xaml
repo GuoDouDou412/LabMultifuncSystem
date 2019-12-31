@@ -1,0 +1,24 @@
+﻿<dx:ThemedWindow
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+        xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+        xmlns:dxsps="http://schemas.devexpress.com/winfx/2008/xaml/spreadsheet" x:Class="LabMultifuncSystem.MainWindow"
+        Title="实验室管理系统" WindowState="Maximized" Height="533">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="0" Height="30" VerticalAlignment="Top"/>
+        <TabControl x:Name="tabControl" Margin="0,30,0,0" TabStripPlacement="Left" FontSize="16">
+            <TabItem Header="证书生成">
+                <Grid Background="#FFE5E5E5">
+                    <dxsps:SpreadsheetControl x:Name="xlsViewer" CommandBarStyle="Empty" Margin="0,250,0,0" ShowFormulaBar="True" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="证书查询">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem Header="基标准维护">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</dx:ThemedWindow>
